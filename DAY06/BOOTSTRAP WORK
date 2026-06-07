@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PVR website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #09090b;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #09090b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #27272a;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3f3f46;
+        }
+
+        @keyframes continuousMarquee {
+            0% {
+                transform: translate3d(0, 0, 0);
+            }
+            100% {
+                transform: translate3d(-50%, 0, 0);
+            }
+        }
+
+        .animate-marquee-infinite {
+            display: flex;
+            width: max-content;
+            animation: continuousMarquee 35s linear infinite;
+        }
+
+        .animate-marquee-infinite:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body class="text-zinc-100 antialiased">
+
+    <header class="bg-zinc-950/90 backdrop-blur-md border-b border-zinc-800/80 py-4 px-6 sticky top-0 z-50 transition-all">
+        <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+            
+            <div class="flex items-center space-x-6">
+                <div class="flex items-center space-x-3 cursor-pointer group">
+                    <span class="bg-gradient-to-r from-amber-500 to-amber-600 text-black px-4 py-1.5 rounded-lg font-black tracking-widest text-lg shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform duration-300">
+                        PVR
+                    </span>
+                    <span class="text-xs tracking-widest uppercase font-extrabold text-zinc-400 hidden sm:inline-block">CINEMAS</span>
+                </div>
+
+                <div class="relative hidden md:block">
+                    <button class="text-xs text-zinc-300 hover:text-white bg-zinc-900/80 hover:bg-zinc-900 px-4 py-2 rounded-full border border-zinc-800 flex items-center space-x-2 transition-all cursor-pointer">
+                        <i class="fa-solid fa-location-dot text-amber-500"></i>
+                        <span class="font-semibold">Ahmedabad</span>
+                       
+                    </button>
+                </div>
+            </div>
+
+            <div class="hidden lg:flex flex-grow max-w-md mx-6">
+                <div class="relative w-full">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <i class="fa-solid fa-magnifying-glass text-zinc-500 text-sm"></i>
+                    </span>
+                    <input type="text" placeholder="Search for Movies, Theatres or Events..." class="w-full bg-zinc-900/60 text-zinc-200 text-xs pl-10 pr-4 py-2.5 rounded-xl border border-zinc-800 focus:border-amber-500/50 focus:outline-none focus:ring-1 focus:ring-amber-500/50 transition-all placeholder-zinc-500">
+                </div>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <nav class="hidden md:flex items-center space-x-1 text-xs font-semibold text-zinc-300">
+                    <a href="movies.html" class="px-3 py-2 text-amber-500 hover:text-amber-400 transition-colors">Movies</a>
+                    <a href="showtime.html" class="px-3 py-2 text-amber-500 hover:text-white transition-colors">Showtimes</a>
+                    <a href="booking2.html#" class="px-3 py-2 text-amber-500 hover:text-white transition-colors">booking</a>
+                    <a href="offers.html" class="px-3 py-2 text-amber-500 hover:text-white transition-colors">Offers</a>
+                </nav>
+
+                <button class="bg-zinc-900 hover:bg-zinc-800 text-zinc-100 hover:text-amber-500 border border-zinc-800 
+                         p-2 rounded-xl text-sm transition-all flex items-center justify-center cursor-pointer">
+                    <span class="text-xs font-semibold hidden md:inline"></span>
+    <style>
+        
+        body{
+            font-family:Arial;
+            background:#111;
+            color:white;
+        }
+
+        .signin{
+            text-align:right;
+            padding:20px;
+        }
+
+        .signin a{
+            text-decoration:none;
+            background:red;
+            color:white;
+            padding:10px 20px;
+            border-radius:5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="signin">
+        <a href="signin.html">signin</a>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8 space-y-12 overflow-hidden">
+
+        <section class="relative w-full overflow-hidden rounded-2xl" aria-label="Trending Spotlight">
+            <div class="absolute inset-y-0 left-0 w-12 sm:w-24 bg-gradient-to-r from-zinc-950 to-transparent z-30 pointer-events-none"></div>
+            <div class="absolute inset-y-0 right-0 w-12 sm:w-24 bg-gradient-to-l from-zinc-950 to-transparent z-30 pointer-events-none"></div>
+
+            <div class="animate-marquee-infinite gap-6 py-2">
+                
+                <div class="flex gap-6 shrink-0">
+                    <div class="relative w-[300px] sm:w-[460px] h-[220px] sm:h-[280px] rounded-xl overflow-hidden group border border-zinc-800/60 bg-zinc-900/40">
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/50 to-transparent z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=600&q=80" alt="Chronicles of Light" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute bottom-0 left-0 p-5 z-20">
+                            <span class="bg-amber-500 text-zinc-950 text-[9px] font-black uppercase px-2 py-0.5 rounded tracking-wider">IMAX 3D</span>
+                            <h3 class="text-base sm:text-lg font-bold text-white mt-2">Chronicles of Light</h3>
+                            <p class="text-zinc-400 text-[11px] font-medium mt-0.5">Now Streaming Box Office Hit</p>
+                        </div>
+                    </div>
+
+                    <div class="relative w-[300px] sm:w-[460px] h-[220px] sm:h-[280px] rounded-xl overflow-hidden group border border-zinc-800/60 bg-zinc-900/40">
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/50 to-transparent z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=600&q=80" alt="Shadows in the Deep" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute bottom-0 left-0 p-5 z-20">
+                            <span class="bg-red-600 text-white text-[9px] font-black uppercase px-2 py-0.5 rounded tracking-wider">4DX Action</span>
+                            <h3 class="text-base sm:text-lg font-bold text-white mt-2">Shadows in the Deep</h3>
+                            <p class="text-zinc-400 text-[11px] font-medium mt-0.5">Experience Multi-sensory Realism</p>
+                        </div>
+                    </div>
+
+                    <div class="relative w-[300px] sm:w-[460px] h-[220px] sm:h-[280px] rounded-xl overflow-hidden group border border-zinc-800/60 bg-zinc-900/40">
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/50 to-transparent z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=600&q=80" alt="Neon Forest" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute bottom-0 left-0 p-5 z-20">
+                            <span class="bg-purple-600 text-white text-[9px] font-black uppercase px-2 py-0.5 rounded tracking-wider">Kids & Family</span>
+                            <h3 class="text-base sm:text-lg font-bold text-white mt-2">The Neon Forest</h3>
+                            <p class="text-zinc-400 text-[11px] font-medium mt-0.5">Enchanting Animated Feature</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex gap-6 shrink-0" aria-hidden="true">
+                    <div class="relative w-[300px] sm:w-[460px] h-[220px] sm:h-[280px] rounded-xl overflow-hidden group border border-zinc-800/60 bg-zinc-900/40">
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/50 to-transparent z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=600&q=80" alt="Chronicles of Light" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute bottom-0 left-0 p-5 z-20">
+                            <span class="bg-amber-500 text-zinc-950 text-[9px] font-black uppercase px-2 py-0.5 rounded tracking-wider">IMAX 3D</span>
+                            <h3 class="text-base sm:text-lg font-bold text-white mt-2">Chronicles of Light</h3>
+                            <p class="text-zinc-400 text-[11px] font-medium mt-0.5">Now Streaming Box Office Hit</p>
+                        </div>
+                    </div>
+
+                    <div class="relative w-[300px] sm:w-[460px] h-[220px] sm:h-[280px] rounded-xl overflow-hidden group border border-zinc-800/60 bg-zinc-900/40">
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/50 to-transparent z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=600&q=80" alt="Shadows in the Deep" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute bottom-0 left-0 p-5 z-20">
+                            <span class="bg-red-600 text-white text-[9px] font-black uppercase px-2 py-0.5 rounded tracking-wider">4DX Action</span>
+                            <h3 class="text-base sm:text-lg font-bold text-white mt-2">Shadows in the Deep</h3>
+                            <p class="text-zinc-400 text-[11px] font-medium mt-0.5">Experience Multi-sensory Realism</p>
+                        </div>
+                    </div>
+
+                    <div class="relative w-[300px] sm:w-[460px] h-[220px] sm:h-[280px] rounded-xl overflow-hidden group border border-zinc-800/60 bg-zinc-900/40">
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/50 to-transparent z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=600&q=80" alt="Neon Forest" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute bottom-0 left-0 p-5 z-20">
+                            <span class="bg-purple-600 text-white text-[9px] font-black uppercase px-2 py-0.5 rounded tracking-wider">Kids & Family</span>
+                            <h3 class="text-base sm:text-lg font-bold text-white mt-2">The Neon Forest</h3>
+                            <p class="text-zinc-400 text-[11px] font-medium mt-0.5">Enchanting Animated Feature</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="space-y-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h2 class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                        <span class="w-1 h-5 bg-amber-500 rounded-full inline-block"></span>
+                     Theatre Experiences
+                    </h2>
+                    <p class="text-xs text-zinc-500 mt-0.5">Here are some experience of audience.</p>
+                </div>
+                <button class="text-xs font-bold text-amber-500 hover:text-amber-400 transition-colors flex items-center space-x-1">
+                </button>
+            </div>
+
+            <div class="w-full overflow-x-auto rounded-xl border border-zinc-800/80 bg-zinc-900/20 backdrop-blur-sm">
+                <table class="w-full text-left border-collapse min-w-[640px]">
+                    <thead>
+                        <tr class="border-b border-zinc-800 text-zinc-400 uppercase text-[10px] tracking-wider font-extrabold bg-zinc-900/50">
+                            <th class="py-4 px-6">Theatre</th>
+                            <th class="py-4 px-5">Audio-Visual </th>
+                            <th class="py-4 px-5">Seating Comfort </th>
+                            <th class="py-4 px-5">Perks & Amenities</th>
+                            <th class="py-4 px-6 text-right">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-zinc-900/60 text-xs">
+                        
+                        <tr class="hover:bg-zinc-900/40 transition-colors group">
+                            <td class="py-4 px-6 font-bold text-zinc-100 flex items-center space-x-3">
+                                <span class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-black px-2 py-1 rounded text-[10px] tracking-tight">IMAX</span>
+                                <div>
+                                    <div class="font-bold text-zinc-200">PVR IMAX</div>
+                                    <div class="text-[10px] text-zinc-500 font-normal">Ultimate Immersion</div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-5 text-zinc-300">
+                                <div class="font-medium text-zinc-200">Dual 4K Laser Projection</div>
+                                <div class="text-[10px] text-zinc-500">12-Channel Custom Audio</div>
+                            </td>
+                            <td class="py-4 px-5 text-zinc-400">
+                                Rocker Leather Loungers with Expanded Legroom
+                            </td>
+                            <td class="py-4 px-5">
+                                <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/10">
+                                     Early Access Pass
+                                </span>
+                            </td>
+                            <td class="py-4 px-6 text-right font-bold text-amber-500 group-hover:text-amber-400 transition-colors">
+                                ₹350 - ₹650
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-zinc-900/40 transition-colors group">
+                            <td class="py-4 px-6 font-bold text-zinc-100 flex items-center space-x-3">
+                                <span class="bg-gradient-to-r from-amber-500 to-yellow-600 text-zinc-950 font-black px-2 py-1 rounded text-[10px] tracking-tight">GOLD</span>
+                                <div>
+                                    <div class="font-bold text-zinc-200">PVR Gold Class</div>
+                                    <div class="text-[10px] text-zinc-500 font-normal">Ultra Luxury Living</div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-5 text-zinc-300">
+                                <div class="font-medium text-zinc-200">Sony 4K Digital Cinema</div>
+                                <div class="text-[10px] text-zinc-500">Dolby Atmos Surround</div>
+                            </td>
+                            <td class="py-4 px-5 text-zinc-400">
+                                Fully Motorized Recliners (180° Flatbed Layout)
+                            </td>
+                            <td class="py-4 px-5 space-y-1">
+                                <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-medium bg-zinc-800 text-zinc-300">
+                                    At-seat Butler Service
+                                </span>
+                            </td>
+                            <td class="py-4 px-6 text-right font-bold text-amber-500 group-hover:text-amber-400 transition-colors">
+                                ₹700 - ₹1200
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-zinc-900/40 transition-colors group">
+                            <td class="py-4 px-6 font-bold text-zinc-100 flex items-center space-x-3">
+                                <span class="bg-gradient-to-r from-red-600 to-orange-500 text-white font-black px-2 py-1 rounded text-[10px] tracking-tight">4DX</span>
+                                <div>
+                                    <div class="font-bold text-zinc-200">PVR 4DX</div>
+                                    <div class="text-[10px] text-zinc-500 font-normal">Absolute Motion Arena</div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-5 text-zinc-300">
+                                <div class="font-medium text-zinc-200">RealD 3D Optimization</div>
+                                <div class="text-[10px] text-zinc-500">Environmental FX Systems</div>
+                            </td>
+                            <td class="py-4 px-5 text-zinc-400">
+                                Multi-Axis Motion Synchronized Seats
+                            </td>
+                            <td class="py-4 px-5">
+                                <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-medium bg-blue-500/10 text-blue-400 border border-blue-500/10">
+                                     Wind, Rain, and Scent FX
+                                </span>
+                            </td>
+                            <td class="py-4 px-6 text-right font-bold text-amber-500 group-hover:text-amber-400 transition-colors">
+                                ₹400 - ₹700
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-zinc-900/40 transition-colors group">
+                            <td class="py-4 px-6 font-bold text-zinc-100 flex items-center space-x-3">
+                                <span class="bg-zinc-800 text-zinc-200 border border-zinc-700 font-black px-2 py-1 rounded text-[10px] tracking-tight">P[XL]</span>
+                                <div>
+                                    <div class="font-bold text-zinc-200">PVR P[XL]</div>
+                                    <div class="text-[10px] text-zinc-500 font-normal">Premium Large Screen</div>
+                                </div>
+                            </td>
+                            <td class="py-4 px-5 text-zinc-300">
+                                <div class="font-medium text-zinc-200">Giant Screen Barco Laser</div>
+                                <div class="text-[10px] text-zinc-500">Dolby Atmos Surround</div>
+                            </td>
+                            <td class="py-4 px-5 text-zinc-400">
+                                Customized Ergo-Luxury Seating Arrays
+                            </td>
+                            <td class="py-4 px-5">
+                                <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-medium bg-zinc-800 text-zinc-400">
+                                    Standard Comfort Perks
+                                </span>
+                            </td>
+                            <td class="py-4 px-6 text-right font-bold text-amber-500 group-hover:text-amber-400 transition-colors">
+                                ₹200 - ₹450
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+     
+<div class="w-75 mx-auto text-center">
+    <section class="max-w-5xl mx-auto px-6 py-10">
+        <h2 class="text-3xl font-bold text-amber-500 mb-4">
+            About us!
+        </h2>
+    <div class="card bg-dark text-light shadow-lg border-0">
+        <div class="card-body p-4">
+            <p class="card-text text-center fs-5">
+                Welcome to PVR Cinemas, your ultimate destination for movie entertainment.
+                Our platform allows users to explore the latest movies, check showtimes,
+                book tickets online, and enjoy exclusive offers. We are committed to
+                providing a seamless and convenient booking experience while bringing
+                the magic of cinema closer to every movie lover.
+            </p>
+        </div>
+    </div>
+</div>
+</section>
+
+        <section class="py-10">
+    <h2 class="text-3xl font-bold text-center text-amber-500 mb-8">
+        Why us?
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 px-6">
+
+        <div class="bg-zinc-900 p-5 rounded-lg text-center">
+            <h3 class="text-xl font-semibold text-white"> Latest Movies</h3>
+            <p class="text-gray-400 mt-2">
+                Explore the newest movie releases.
+            </p>
+        </div>
+
+        <div class="bg-zinc-900 p-5 rounded-lg text-center">
+            <h3 class="text-xl font-semibold text-white"> Easy Booking</h3>
+            <p class="text-gray-400 mt-2">
+                Book tickets quickly and securely.
+            </p>
+        </div>
+
+        <div class="bg-zinc-900 p-5 rounded-lg text-center">
+            <h3 class="text-xl font-semibold text-white"> Exciting Offers</h3>
+            <p class="text-gray-400 mt-2">
+                Get discounts on tickets and snacks.
+            </p>
+        </div>
+
+        <div class="bg-zinc-900 p-5 rounded-lg text-center">
+            <h3 class="text-xl font-semibold text-white">Multiple Locations</h3>
+            <p class="text-gray-400 mt-2">
+                Find PVR cinemas near you.
+            </p>
+        </div>
+
+    </div>
+</section>
+<body>
+    <div class="w-75 mx-auto text-center">
+    <section class="max-w-5xl mx-auto px-6 py-10">
+        <h2 class="text-3xl font-bold text-amber-500 mb-4">
+            Privacy Policy
+        </h2>
+         <div class="w-75 mx-auto text-center">
+        <p class="text-gray-200">
+             At PVR Cinemas, we respect your privacy and are committed to protecting your personal information.
+              Any details collected during registration or ticket booking are used only to provide better services,
+               process bookings, and improve your experience. We do not share your information with unauthorized third
+                parties and take appropriate measures to keep your data secure.
+
+        </p>
+        </div>
+        </div>
+    </section>
+
+    </main>
+<footer class="bg-zinc-950 border-t border-zinc-800 mt-12">
+    <div class="max-w-7xl mx-auto px-6 py-10">
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+
+           
+            <div>
+                <h3 class="text-xl font-bold text-amber-500 mb-4">
+                    PVR CINEMAS
+                </h3>
+                <p class="text-zinc-400 text-sm">
+                    Experience world-class entertainment with the latest movies,
+                    luxury seating, and exclusive offers.
+                </p>
+            </div>
+
+           
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">
+                    Quick Links
+                </h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="movies.html" class="text-zinc-400 hover:text-amber-500">Movies</a></li>
+                    <li><a href="showtime.html" class="text-zinc-400 hover:text-amber-500">Showtimes</a></li>
+                    <li><a href="booking2.html" class="text-zinc-400 hover:text-amber-500">Book Tickets</a></li>
+                    <li><a href="offers.html" class="text-zinc-400 hover:text-amber-500">Offers</a></li>
+                </ul>
+            </div>
+
+           
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">
+                    Contact Us
+                </h3>
+
+                <p class="text-zinc-400 text-sm mb-2">
+                    <i class="fas fa-phone text-amber-500 mr-2"></i>
+                    +91 98765 43210
+                </p>
+
+                <p class="text-zinc-400 text-sm mb-2">
+                    <i class="fas fa-envelope text-amber-500 mr-2"></i>
+                    amdavadcinema@pvrcinemas.com
+                </p>
+
+                <p class="text-zinc-400 text-sm">
+                    <i class="fas fa-location-dot text-amber-500 mr-2"></i>
+                    Ahmedabad, Gujarat, India
+                </p>
+            </div>
+
+            
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">
+                    Follow Us
+                </h3>
+
+                <div class="flex gap-4 text-2xl">
+                    <a href="#" class="text-zinc-400 hover:text-blue-500">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+
+                    <a href="#" class="text-zinc-400 hover:text-pink-500">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="text-zinc-400 hover:text-sky-500">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <a href="#" class="text-zinc-400 hover:text-red-500">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-zinc-800 mt-8 pt-6 text-center">
+            <p class="text-zinc-500 text-sm">
+                © 2026 PVR Cinemas. All Rights Reserved.
+            </p>
+        </div>
+
+    </div>
+</footer>
+    </body>
