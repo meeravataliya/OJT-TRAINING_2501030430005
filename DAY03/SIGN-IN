@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PVR Cinema login</title>
+
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family:Arial;
+            background:#080808;
+        }
+
+        .signin-box{
+            width:350px;
+            background:rgb(248, 245, 248);
+            padding:30px;
+            margin:100px auto;
+            border-radius:10px;
+            text-align:center;
+        }
+
+        .logo{
+            color:#e50914;
+            font-size:32px;
+            font-weight:bold;
+            margin-bottom:20px;
+        }
+
+        input{
+            width:90%;
+            padding:12px;
+            margin:10px 0;
+            border:1px solid gray;
+            border-radius:5px;
+            font-size:15px;
+        }
+
+        button{
+            width:95%;
+            padding:12px;
+            background:#e50914;
+            color:white;
+            border:none;
+            border-radius:5px;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#b20710;
+        }
+
+        p{
+            margin-top:15px;
+        }
+
+        a{
+            color:#e50914;
+            text-decoration:none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="signin-box">
+
+        <div class="logo">PVR CINEMAS
+            <br>
+            login
+        </div>
+        <form>
+
+            <input type="email"
+                   placeholder="Enter Email"
+                   required>
+
+            <input type="password"
+                   placeholder="Enter Password"
+                   required>
+
+            <button type="submit">
+                login
+            </button>
+
+        </form>
+
+        <p>
+            New User?
+            <a href="register.page.html">Register Here</a>
+        </p>
+
+    </div>
+
+</body>
+</html>  
